@@ -4,14 +4,14 @@
 }
 /*HEADER*/
 
-div{
-	height: 957,351px;
-	width: 1349px;
+.advert{
+	margin: 0 auto;
+	height: 957px;
+	width: 1100px;
 }
 
 .logo{
 	margin: 2% 60% 4% 3%;
-	
 	text-align: left;
 	font-size: 30px;
 	font: Tahoma;
@@ -112,8 +112,6 @@ nav ul li a:hover{
 	float:right;
 	width: 65%;
 	margin-top: 5%;
-
-
 }
 
 img{
