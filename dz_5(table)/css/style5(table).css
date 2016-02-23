@@ -1,0 +1,60 @@
+body{
+    margin: 100px;
+}
+
+/*Параметры ячеек*/
+
+td{
+    border: 5px solid black;
+    width: 25px;
+    height: 25px;
+    color: transparent;
+}
+
+/*Убрать отступы между ячейками*/
+
+table{
+    border-spacing: 0;
+}
+
+/*невидимые ячейки для сохранения структуры таблицы*/
+
+.i td {
+    color: transparent;
+    border: 5px solid transparent;
+    border-top: none; 
+}
+.d{
+    color: transparent;
+    border: 5px solid transparent ;
+}
+
+/*Убираем границы*/
+
+.a td {
+    border-top: none;
+}
+.g {
+    border-bottom: none;
+}
+.b {
+    border-left: none;
+}
+.c {
+    border-right: none;
+}
+
+/*Цвет ячеек*/
+
+.c1{
+    background: #ffea50;
+}
+.e{
+    background: #fe5a3d;
+}
+.h {
+    background: #094786;
+}
+.f{
+    background: #1a2823;
+}
