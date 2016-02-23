@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'helv';
+    src: url(../fonts/helveticaneuecyr-medium-webfont.eot);
+    src: url(../fonts/helveticaneuecyr-medium-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/helveticaneuecyr-medium-webfont.woff2) format('woff2'),
+         url(../fonts/helveticaneuecyr-medium-webfont.woff) format('woff'),
+         url(../fonts/helveticaneuecyr-medium-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
