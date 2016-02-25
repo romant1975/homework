@@ -11,9 +11,12 @@
     font-weight: normal;
     font-style: normal;
 }
+body{
+    margin: 0;
+}
 .fon{
-	height: 1100px;
-	width: 1200px;
+	height: 1025px;
+	width: 1349px;
 	margin: 0 auto;
 	background: url(../img/foto1.jpg) no-repeat 0 0;
 	background-size: 100%;
@@ -121,18 +124,23 @@ a{
 .line1 {
     position: absolute;
     top: 18px;
-    left: 5px;
+    left: -70px;
 }
 .line2{
 	position: absolute;
     top: 18px;
-    left: 160px;
+    left: 94px;
+}
+.line_block , .line1 , .line2 img{
+    height: 2px;
+    width: 118px;
 }
 .ou{
     position: absolute;
-    left: 125px;
+    top: 18px;
+    left: 60px;
 	width: 22px;
-    color: #999;margin
+    color: #999;
     font-size: 20px;
 }
 

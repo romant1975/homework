@@ -1,14 +1,8 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-
-
 
 /*Голубой фон*/
 
 body{
-    background: url(img/img_8.jpg);
+    background: url(../img/img_8.jpg);
 	background-size: 100%;
 	height:1100px;
     width: 1349px;
@@ -18,13 +12,11 @@ body{
 /*Белый фон, тень, родительский блок*/
 
 .container{
-   
+    margin: 0 auto;
 	height:430px;
     width: 997px;
     position: relative;
     background-color: white;
-    margin-left: 13%;
-    margin-right: 20%;
     box-shadow: 0 0 20px;
     margin-bottom: 10%;
 }
@@ -43,108 +35,92 @@ body{
 
 .contact{
 	position: absolute;
-    top: 0;
+    top: 3%;
     left: 80%;
+    font-family: 'Tahoma Regular', sans-serif;
+    font-size: 14px;
 	color: #68b4c7;
-	margin-top: 10px;
 }
 
 /*Флаги, названия стран, ссылки*/
 
-ul.flag{
+.flag{
 	position: absolute;
-    top: 15%;
-    left: 68%;
-    list-style: none; 
-    font: 12px Tahoma,sans-serif;
-    margin-top: 30px;
-    margin-left: 0px; 
-    padding-left: 0;
+    top: 25%;
+    left: 57%;
+    padding: 2px;
+}
+
+.flag  ul li{
+    display: inline-block;
+    width: 60px;
     text-align: center;
 }
-
-ul.flag li{
-    display: inline-block;
-    margin-left: 0px;  
-    padding-top: 0px;
-}
-
-ul.flag p{
-	color: #68b4c7;
+.flag a{
+    font-family: 'Tahoma Regular';
+    font-size: 10px;
+    color: #4b9db4;
 }
 
 /*Основное фото*/
 
 .foto{
 	position: absolute;
-    top: 40%;
+    top: 45%;
 }
 
 /*Выпадающие меню*/
 
-.menu{
-	position: absolute;
-    top: 93%;
-    left: 0;
-    bottom: 61%;
-    height: 30px;
+.dropdown_menu {
+    height: 28px;
     width: 997px;
-    background: black;
+    background-color: black;
+    border-top: 1px solid #cacbcb;
+    box-shadow: 0px 5px #333;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
     z-index: 1;
-}
-
-ul.dropdown li{
-    position: relative; 
-    background: black;
-}
-
- ul.dropdown,
- ul.dropdown-inside{
-    list-style-type: none;
-    padding: 0;
-}
-
- ul.dropdown-inside{
     position: absolute;
-    left: -9999px;
-}
-
- ul.dropdown li.dropdown-top{
-    display: inline;
-    float: left;
-    margin: 0 1px 0 3%;
-    font-size: 15px Tahoma,sans-serif;
-}
-
- ul.dropdown li.dropdown-top a{
-    padding: 3px 10px 4px;
-    display: block;
-    background: black;
-    color: white;
-    text-decoration: none; 
-}
-
- ul.dropdown a.dropdown-top{
-    background: black;
-    color: black;
-}
-
- ul.dropdown a.dropdown-top:hover{ 
- 	padding: 2px 10px 5px;
- 	font: 15px;
-}
-
- ul.dropdown li.dropdown-top:hover .dropdown-inside{
-    display: block;
-    left: 0;
-}
-
- ul.dropdown .dropdown-inside{
-    background: black; 
+    top:93%;
+    border-bottom: 1px solid #000000;
 } 
-
- ul.dropdown .dropdown-inside a:hover{ 
- 	background: black;
+.dropdown_menu_hor {
+    padding-top: 8px;
+    padding-left: 65px;
+} 
+.dropdown_menu_hor li {
+    float:left;
+    margin-right: 50px;
+}
+ .dropdown_menu_hor li a {
+    position:relative;
+    display: block;
+    color: white;
+    height: 28px;
+    text-decoration: none;
+}
+.dropdown_menu_ver {
+    display: none;
+    position: absolute;
+   /* -webkit-padding-start:0px;*/
+    margin-top: -7px;
+    padding-top: 1px;
+    background-color: black;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.dropdown_menu_ver li {
+    float:none;
+    display:block;
+    background:none;
+    padding: 5px 0px 5px 5px;
+    margin-right: 10px;
+   
+}
+.dropdown_menu_ver li  a {
+    color: white;
+    height: 12px;
+}
+li:hover ul, li.over ul{
+    display:block;
 }
 
 /*3-х колоночный контент*/
@@ -181,6 +157,9 @@ ul.dropdown li{
 
 h1{
     text-align: center;
+     font-family: 'Tahoma Regular', sans-serif;
+     font-weight: bold;
+     line-height: 30px;
 }
 
 /*Копирайт*/
@@ -190,9 +169,9 @@ p.copyright{
     bottom: 10px;
     left: 40%;
     color: #b5d4e2;
-    font-family: Tahoma;
-    font-size: 12px;
+    font-family: 'Tahoma Regular', sans-serif;
 }
+
 
 
 
