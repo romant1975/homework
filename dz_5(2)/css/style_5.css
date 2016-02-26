@@ -12,59 +12,60 @@
     font-style: normal;
 }
 body{
-    margin: 0;
+    margin: 0 auto;
 }
 .fon{
-	height: 1025px;
-	width: 1349px;
-	margin: 0 auto;
+	height: 1000px;
+    margin: 0 auto;
 	background: url(../img/foto1.jpg) no-repeat 0 0;
-	background-size: 100%;
+	background-size: cover;
+    background-position:  center; 
+
 }
 a{
 	color: #60b5ed;
 	text-decoration: none;
 }
 .top{
-	margin: 0 auto;
-	height: 40px;
+    margin: 0 auto;
 	background: #074e8c;
+    overflow: hidden;
 }
 .top ul{
 	margin-right: 30px;
 	color: #074e8c;
+    
 }
 .top li{
+    display: inline-block;
 	float: right;
+
 }
 .top li a{
-    display: block;
+    
     padding: 0 25px 0 25px;
-    line-height: 30px;
-    margin-top: 5px;
+    line-height: 40px;
+   
 }
 .top li>a:hover{
+    display: block;
 	margin: 0;
 	line-height: 40px;
 	background: #4eabda;
 	color: white;
 }
 .right{
-    display: block;
-    height: 38px;
-	background: #48a2d6;
+    background: #48a2d6;
 	color: #fff;
-	border: 1px solid #4f9fd9;
 }
 .right p a{
-	display: inline;
 	color: white;
     padding: 0;
     margin: 5px;
     border-bottom: 2px solid #aec7e5; 
 }
 .top .right p{
-	margin-top: 5px;
+	
 	padding: 0 14px 0 14px;
 }
 .flag{
@@ -73,7 +74,6 @@ a{
     background: url(../img/flag.png) no-repeat 5% 50%;
 }
 .flag p a{
-    display: inline;
     padding: 0;
     margin: 0;
 }
@@ -83,48 +83,44 @@ a{
 	color: white;
 }
 .top .flag p{
-	margin-top: 5px;
 	padding: 0 14px 0 34px;
     border-left: 1px solid #56a2dc;
 }
 .top .flag li>a :hover{
     margin: 0;
 	line-height: 40px;
-	background: white;
+	background: #fff;
 	color: #4eabda;
 }
 .conteiner{
-	position: relative;
-    height: 630px;
-    width: 520px;
-    margin: auto;
-    margin-top: 170px;
+    height: 63%;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 10%;
     background: rgba(0, 0, 0, 0.63);
 }
 .box{
-
-    height: 44px;
+    margin: 0 auto;
     border-bottom: 2px solid #c3cbb6;
-    font-size: 16px;
+    font-size: 30px;
     color: white;
     text-align: center;
     line-height: 44px;
 }
 .facebook {
     margin: 0 auto;
-    margin-top: 50px;
-    width: 260px;
-    height: 40px;
+    margin-top: 10%;
+    width: 55%;
+
 }
 .line_block {
     margin: 0 auto;
     position: relative;
-    width: 260px;
 }
 .line1 {
     position: absolute;
     top: 18px;
-    left: -70px;
+    right: 70px;
 }
 .line2{
 	position: absolute;
@@ -145,10 +141,10 @@ a{
 }
 
 .form{
-
-    margin: 40px auto 0;
+    margin: 0 auto ;
     display: block;
-    width: 260px;
+    padding-top: 50px;
+    width: 55%;
 }
 input{
     width: 258px;
@@ -163,7 +159,7 @@ input{
 input:focus{
     background: linear-gradient(to bottom, #1e4b76, #1f5384);
     outline: none;
-    box-shadow: 0px 0px 8px 2px rgba(104,155,204,1);
+    box-shadow: 0 0 8px 2px rgba(104,155,204,1);
     border-bottom: 1px solid #689bcc;
 }
 .checkbox{
@@ -183,15 +179,10 @@ input:focus{
     font-size: 14px;
     cursor: pointer;
 }
-.foter{
-	position: absolute;
-	top: 95%;
-	left: 20%; 
-	height: 40px;
-}
 .footer p{
     margin: 0 auto;
     text-align: center;
     font-size: 12px;
     color: #cccccc;
 }
+
