@@ -39,7 +39,7 @@ body{
 	color: #68b4c7;
 }
 .contact p{
-    margin-left: 70%;
+    margin-left: 65%;
 }
 
 /*Флаги, названия стран, ссылки*/
@@ -48,6 +48,7 @@ body{
 .contact  ul li{
     display: inline-block;
     margin-top: 20px;
+    float: right;
     width: 60px;
     text-align: center;
 }
@@ -70,24 +71,25 @@ body{
     width: 100%;
     background-color: black;
     border-top: 1px solid #cacbcb;
-    box-shadow: 0 5px #333;
+    /*box-shadow: 0 5px #333;*/
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.75);
     z-index: 1;
     border-bottom: 1px solid #000000;
 } 
 .dropdown_menu_hor {
     padding-top: 8px;
-    padding-left: 65px;
+    padding-left: 35px;
 } 
 .dropdown_menu_hor li {
     display: inline-block;
-    width: 13%;
+    margin-right: 55px;
+    /*width: 13%;*/
 }
  .dropdown_menu_hor li a {
     position:relative;
     display: block;
     color: white;
-    height: 28px;
+    /*height: 28px;*/
     text-decoration: none;
 }
 .dropdown_menu_ver {

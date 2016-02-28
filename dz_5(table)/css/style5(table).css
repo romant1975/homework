@@ -16,45 +16,82 @@ td{
 table{
     border-spacing: 0;
 }
-
-/*невидимые ячейки для сохранения структуры таблицы*/
-
-.i td {
-    color: transparent;
-    border: 5px solid transparent;
-    border-top: none; 
-}
-.d{
-    color: transparent;
-    border: 5px solid transparent ;
-}
-
-/*Убираем границы*/
-
 .a td {
+    height: 50px;
     border-top: none;
 }
-.g {
-    border-bottom: none;
+.a1{
+    border-right: none;
 }
 .b {
+    width: 50px;
+    height: 125px;
     border-left: none;
 }
 .c {
-    border-right: none;
+    width: 75px;
+    height: 150px;
+
 }
-
-/*Цвет ячеек*/
-
 .c1{
     background: #ffea50;
+
+}
+.c2{
+    width: 125px;
+    height: 75px;
+}
+.c3{
+    width: 150px;
+    height: 75px;
+    border-right: none;
+}
+.c4{
+    width: 75px;
+    height: 150px;
+    border-right: none;
+}
+.c5{
+    border-right: none; 
+}
+.g {
+    height: 50px;
+    border-bottom: none;
+}
+.g1{
+    width: 150px;
+    height: 50px;
+    border-bottom: none;
+}
+.g3{
+    border-right: none;
+    border-bottom: none;
 }
 .e{
+    width: 275px;
+    height: 275px;
     background: #fe5a3d;
 }
 .h {
+    width: 150px;
+    height: 100px;
     background: #094786;
+    border-right: none;
 }
 .f{
+    width: 75px;
+    height: 75px;
     background: #1a2823;
 }
+.f1{
+    width: 75px;
+    height: 25px;
+    background: #1a2823; 
+}
+.k{
+    width: 50px;
+    height: 125px;
+    border-left: none;
+    border-bottom: none;
+}
+
