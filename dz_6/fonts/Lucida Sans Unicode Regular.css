@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'lucida';
+    src: url('../fonts/l_10646-webfont.eot');
+    src: url('../fonts/l_10646-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/l_10646-webfont.woff2') format('woff2'),
+         url('../fonts/l_10646-webfont.woff') format('woff'),
+         url('../fonts/l_10646-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
