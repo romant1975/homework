@@ -7,7 +7,7 @@
          url("../fonts/legue_gothik/league-gothic_allfont.ru-webfont.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
-
+    
 }
 
 @font-face {
@@ -59,10 +59,11 @@ a:link, a:active, a:visited {
  	text-decoration: none;
 }
 .header{
-	margin: 0 auto;
-	width: 100%;
-	background: url("../img/bg.jpg") no-repeat top  center;
+	/*margin: 0 auto;*/
+	/*width: 100%;*/
+	background: url(../img/body_bg_top.png) no-repeat  center;
 	padding-bottom: 5.3%; 
+	background: cover;
 }
 .box{
 	margin: 0 auto;
@@ -76,7 +77,7 @@ a:link, a:active, a:visited {
 }
 .top_menu{
 	display: block;
-	margin: 23px 0;
+	margin: 23px 0;_
 	padding-top: 5%;
     float: left;
     margin-left: 159px;
@@ -199,10 +200,10 @@ ul.home_rol_bar_hidden > li > a {
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 24px;
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 	margin-top: 5px;
 	margin-left: -3px;
 	height: 143px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 }
 .phone{
@@ -240,8 +241,15 @@ ul.home_rol_bar_hidden > li > a {
 }
 .content_background {
 	background-repeat: no-repeat;		
+	background: rgb(55, 42, 62);
+	background: -moz-linear-gradient(270deg, rgb(55, 42, 62) 10%, rgb(118, 83, 132) 90%);
+	background: -webkit-linear-gradient(270deg, rgb(55, 42, 62) 10%, rgb(118, 83, 132) 90%);
+	background: -o-linear-gradient(270deg, rgb(55, 42, 62) 10%, rgb(118, 83, 132) 90%);
+	background: -ms-linear-gradient(270deg, rgb(55, 42, 62) 10%, rgb(118, 83, 132) 90%);
 	background: linear-gradient(0deg, rgb(55, 42, 62) 10%, rgb(118, 83, 132) 90%);
 	background-size: auto 100%;
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(33,51,59,1);
+	-moz-box-shadow: 0px 1px 0px 0px rgba(33,51,59,1);
 	box-shadow: 0px 1px 0px 0px rgba(33,51,59,1);
 	border-bottom: 1px solid #000000;
 }
@@ -326,6 +334,7 @@ div.lower_content_text_phantom p{
 	margin-top: 22px;
 	text-transform: uppercase;
 	color: #ffffff;
+	text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
 }
 .lower_content_text p{
 	margin-top: 8px;
@@ -372,6 +381,7 @@ div.left_blog {
 	width:49%;
 	float: left;
 	margin-left: 25px;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
 .left_blog_img{
 	background-image: url(../img/left_blog_img.png);
@@ -387,11 +397,6 @@ div.left_blog_img {
 div.left_blog_triangle {
 	display: block;
 	max-width: 100%;
-   -webkit-filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.15));
-    -moz-filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.15));
-    -ms-filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.15));
-    -o-filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.15));
-    filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.15));
 }
 div.left_blog_text {
 	display: inline-block;
@@ -409,8 +414,7 @@ div.blog_triangle {
     margin-right:19%;
 }
 div.left_blog_text>h2 {
-
-	text-transform: uppercase;
+    text-transform: uppercase;
 	font-size:30px;
 	margin-left: 8%;
 	font-family: 'league_gothicregular', arial, sans-serif;
@@ -439,6 +443,7 @@ div.right_blog>h2 {
 	font-size: 30px; 
 	text-transform: uppercase;
 	font-family:'league_gothicregular';
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
 div.right_blog_img, div.right_blog_text {
 	display: inline-block;
@@ -457,12 +462,14 @@ div.right_blog_resent_updates_text>h2 {
 	margin-left: 68px;
 	font-size: 16px;
 	font-family: 'open_sansextrabold', sans-serif;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
 div.right_blog_resent_updates_text>p {
 	margin-left: 68px;
 	font-size: 16px;
 	max-height:24px;
 	font-family:'open_sanslight', sans-serif;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
 .right_blog_link .right_blog_link--read{
     display: inline-block;
@@ -688,6 +695,7 @@ ul.home_rol_bar_lower>li>a{
 	font-family:'league_gothicregular', sans-serif;
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 } 
 .low_res_hidden_lower{
 	display:inline-block;
