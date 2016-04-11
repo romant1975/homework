@@ -32,6 +32,9 @@
     font-style: normal;
 
 }
+header, nav, section, article, aside, footer {
+   display:block;
+}
 
 html, body {
 	margin: 0 auto; 
@@ -43,7 +46,7 @@ html, body {
 .clearfix:after {
    content: ""; 
    clear: both;
-   display: block;
+   display: table;
    height: 0;
 }
 ul:after {
@@ -59,10 +62,10 @@ a:link, a:active, a:visited {
  	text-decoration: none;
 }
 .header{
-	/*margin: 0 auto;*/
-	/*width: 100%;*/
+	margin: 0 auto;
+	width: 100%;
 	background: url(../img/body_bg_top.png) no-repeat  center;
-	padding-bottom: 5.3%; 
+	padding-bottom: 3.5%; 
 	background: cover;
 }
 .box{
@@ -77,7 +80,7 @@ a:link, a:active, a:visited {
 }
 .top_menu{
 	display: block;
-	margin: 23px 0;_
+	margin: 23px 0;
 	padding-top: 5%;
     float: left;
     margin-left: 159px;
@@ -157,7 +160,7 @@ ul.home_rol_bar_hidden > li > a {
  div.header_content {
 	width: 100%;
 	background: rgba(0, 0, 0, 0.2);
-	margin-top: 16%;
+	margin-top: 11.5%;
 	display:block;
 }
 .header_content>div>h1 {
@@ -251,11 +254,15 @@ ul.home_rol_bar_hidden > li > a {
 	-webkit-box-shadow: 0px 1px 0px 0px rgba(33,51,59,1);
 	-moz-box-shadow: 0px 1px 0px 0px rgba(33,51,59,1);
 	box-shadow: 0px 1px 0px 0px rgba(33,51,59,1);
+	background-image: -moz-linear-gradient(top, #745083, #322539);
+	background: linear-gradient(to top, #322539, #745083); 
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#745083,endColorstr=#322539,GradientType=0);
+  zoom: 1;
 	border-bottom: 1px solid #000000;
 }
 .content {
-	padding-top: 5.2%;
-	padding-bottom: 7%;
+	padding-top: 4%;
+	padding-bottom: 5%;
 	color: #ffffff;
 }
 .lower_content_img_1 {
@@ -372,8 +379,8 @@ div.lower_content_img_3{
 	border-bottom: 1px solid #e6e6e6;
 }
 .blog {
-	padding-top:10.7%;
-	padding-bottom: 7.1%;
+	padding-top:7.3%;
+	padding-bottom: 5.1%;
 	box-sizing:border-box;
 }
 div.left_blog {
@@ -561,7 +568,7 @@ a.blog_img_background_link:hover{
 	background: rgba(0, 0, 0, 0.05);
 }
 .categories{
-	padding-bottom: 10%;
+	padding-bottom: 7%;
 	width: 100%;
 	background: #ececec;
 }
