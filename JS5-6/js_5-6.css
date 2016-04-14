@@ -1,0 +1,104 @@
+body {
+    background: url(img/race.jpg) no-repeat  center;
+    background: cover;
+    width: 100%;
+    height: 500px;
+
+}
+
+#conteiner {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#stopwatch {
+    width: 550px;
+    margin: 0 auto;
+
+}
+
+#display {
+    background: #6f6f6f;
+    width: 280px;
+    font-size: 64px;
+    color: #E9E9E9;
+    display: inline-block;
+    float: left;
+    margin-top: 100px;
+    margin-left: 80px;
+    border-width: 3px 0px 3px 3px ;
+    border-color: #6f6f6f;
+    padding: 0;
+    border-radius: 10px 0 0 10px;
+}
+#displayMls{
+    background: #E9E9E9;
+    width: 113px;
+    font-size: 64px;
+    color: #6f6f6f;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 0;
+    border-width: 3px 3px 3px 0px ;
+    border-color: #6f6f6f;
+    border-radius: 0 10px 10px 0;
+}
+
+#startPause
+{
+    width: 150px;
+    height: 41px;
+    display: inline-block;
+    border: 2px solid #484848;
+    box-shadow: inset 0 0 1px 1px #1f1f1f;
+    background: #6f6f6f;
+    color: #E9E9E9;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 80px;
+    border-radius: 10px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+}
+
+#reset {
+    width:150px;
+    height: 41px;
+    display: inline-block;
+    border: 2px solid #484848;
+    box-shadow: inset 0 0 1px 1px #1f1f1f;
+    background: #6f6f6f;
+    color: #E9E9E9;
+    margin-left:89px;
+    margin-top: 40px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#startPause:hover{
+    background: #E9E9E9;
+    color: #1f1f1f;
+    box-shadow: inset 0 0 1px 1px #1f1f1f;
+    transition: 0.2s;
+}
+
+#reset:hover{
+    background: #E9E9E9;
+    color: #1f1f1f;
+    box-shadow: inset 0 0 1px 1px #1f1f1f;
+    transition: 0.2s;
+}
+
+#startPause:active{
+    background:  #E9E9E9;
+    color: #1f1f1f;
+    box-shadow: 0 0 10px 3px #1f1f1f;
+}
+
+#reset:active{
+    background:  #E9E9E9;
+    color: #1f1f1f;
+    box-shadow: 0 0 10px 3px #1f1f1f;
+}
