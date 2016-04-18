@@ -1,50 +1,50 @@
-$(function(){                
-    $(".tabs").lightTabs();  
-    $(":input").myInput();
+$(function(){                //отслеживаем всю загруженную страницу html(DOM)
+    $(".tabs").lightTabs();  //находим элемент с классом .tabs и подключаем к нему функцию
+    $("input").myInput();   // находит элементы и подключает к ним функцию
     
 });
 (function($){               
-    $.fn.lightTabs = function(options){
+    $.fn.lightTabs = function(options){   //$прототип
 
         var createTabs = function(){
             tabs = this;
             i = 0;
             
-            showPage = function(i){
-                $(tabs).children("div").children("div").hide();
-                $(tabs).children("div").children("div").eq(i).show();
-                $(tabs).children("ul").children("li").removeClass("active");
-                $(tabs).children("ul").children("li").eq(i).addClass("active");
+            showPage = function(i){                                //функция
+                $(tabs).children("div").children("div").hide();           //поиск в tabs детей детей div и применяем к ним эффект который скрывает совпавшие элементы
+                $(tabs).children("div").children("div").eq(i).show();      // сокращаем число совпавших элементов до одного и отображает его
+                $(tabs).children("ul").children("li").removeClass("active");  //удаляет созданный класс для ли
+                $(tabs).children("ul").children("li").eq(i).addClass("active"); //у совпавшего одного элемента создает класс
             }
                                 
-            showPage(0);                
+            showPage(0);         //вызов функции и передача аргумента       
             
-            $(tabs).children("ul").children("li").each(function(index, element){
-                $(element).attr("data-page", i);
-                i++;                        
+            $(tabs).children("ul").children("li").each(function(index, element){ //выполняет функцию для каждого элемента
+                $(element).attr("data-page", i); //получение доступа к свойству первого совпавшего элемента
+                i++;    //итерация элементов ли                    
             });
             
-            $(tabs).children("ul").children("li").click(function(){
-                showPage(parseInt($(this).attr("data-page")));
+            $(tabs).children("ul").children("li").click(function(){ //для детей ул применяет событие клик
+                showPage(parseInt($(this).attr("data-page"))); // преобразует в строки в числа?
             });             
         };      
-        return this.each(createTabs);
+        return this.each(createTabs); //возвращает эту функцию для каждого элемента div и ли
     };
 
-    $.fn.myInput = function(options){
-        this.on({
-        mouseenter: function(){
-            $(this).css("background-color", "lightgray");
-            $(this).after( $( "<span>"+$(this).attr("title")+"</span>" ) );
-            $("span").addClass("myTitle");
+    $.fn.myInput = function(options){  //прототип функции  $ 
+        this.on({     //в этой функции применяем
+        mouseenter: function(){      //назначает функцию к событию активируется единожды когда курсор наводится на форму
+            $(this).css("background-color", "lightgray"); //в этой функции выполняется изменение css свойства
+            $(this).after( $( "<span>"+$(this).attr("title")+"</span>" ) ); //вставляет контент
+            $("span").addClass("myTitle"); //присваевает класс
         },
-        mouseleave: function(){
-            $(this).css("background-color", "#ffffff");
-            $("span").remove();
+        mouseleave: function(){   // назначает функцию к событию когда курсор покидает форму выполняется единожды
+            $(this).css("background-color", "#ffffff"); //изменяет css свойство
+            $("span").remove(); //удаляет подсказку
         },
-        click: function(){
-            $(this).css("background-color", "yellow");
-            $("span").remove();
+        click: function(){ //назначает функцию к событию при клике
+            $(this).css("background-color", "yellow"); //изменяет свойство
+            $("span").remove(); //скрывает подсказку
         }
     });
     };
