@@ -1,5 +1,5 @@
-$(function(){
-    $(".tabs").lightTabs();
+$(function(){                
+    $(".tabs").lightTabs();  
     $(":input").myInput();
     
 });
