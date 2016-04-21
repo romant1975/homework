@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DZ_JS9-10</title>
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/dropDownMenu.css"> 
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">  
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.connected-carousels.css">
+        <link rel="stylesheet" type="text/css" href="css/service.flatcheckbox.jquery.css">
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jcarousel.connected-carousels.js"></script>
+        <script src="js/service.flatcheckbox.jquery.js"></script>
+        <script src="js/selectr.js"></script>
+        <script src="js/function.js"></script>
+    </head>
+    <body>
+       <div class="conteiner">
+         <div class="multipleDropdownMenu">
+            <ul id="dropDownMenu" class="dropDownMenu">
+                <li class="menuLevel_1"><a href="#">menuLevel</a></li>
+                <li class="menuLevel_2"><a href="#">menuLevel_2.1</a>
+                    <ul>
+                    <li><a href="#">menuLevel_2.2/1 &raquo;</a>            
+                        <ul>                            
+                            <li><a href="#">menuLevel_2.3/1</a></li>
+                            <li><a href="#">menuLevel_2.3/2 &raquo;</a>
+                                <ul>
+                                    <li><a href="#">menuLevel_2.4</a></li>
+                                    <li><a href="#">menuLevel_2.4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">menuLevel_2.2/2</a></li>
+                    <li><a href="#">menuLevel_2.2/3</a></li>
+                    <li><a href="#">menuLevel_2.2/4</a></li>
+                    </ul>
+                </li> 
+                <li class="menuLevel_3"><a href="#">menuLevel_3.1</a>
+                    <ul>
+                    <li><a href="#">menuLevel_3.2/1</a></li>
+                    <li><a href="#">menuLevel_3.2/2</a></li>
+                    </ul>
+                </li>
+                <li class="menuLevel_4"><a href="#">menuLevel_4.1</a>
+                    <ul>
+                    <li><a href="#">menuLevel_4.2/1</a></li>
+                    <li><a href="#">menuLevel_4.2/3 &raquo;</a>
+                        <ul>
+                            <li><a href="#">menuLevel_4.3/1</a></li>
+                            <li><a href="#">menuLevel_4.3/2</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li class="menuLevel_5"><a href="#">menuLevel_5.1</a>
+                        <ul>
+                            <li><a href="#">menuLevel_5.2/1</a></li>
+                            <li><a href="#">menuLevel_5.2/2</a></li>
+                        </ul>
+                </li>
+            </ul>          
+        </div>
+        <div class="wrapper">
+            <div class="connected-carousels">
+                <div class="stage">
+                    <div class="carousel carousel-stage">
+                        <ul>
+                            <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img7.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img8.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img9.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="img/img10.jpg" width="600" height="400" alt=""></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+                </div>
+
+                <div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation">
+                        <ul>
+                            <li><img src="img/img1.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img2.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img3.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img4.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img5.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img6.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img7.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img8.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img9.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="img/img10.jpg" width="50" height="50" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="styledSelect">
+        <div class="title">
+        <h1>Образцы селекторов</h1>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>Multi-select</h4>
+                <select name="foods" data-selectr-opts='{ "title": "What&#39;s for breakfast? (max 5)", "placeholder": "Search foods", "maxSelection": 5 }'  multiple>
+                    <option data-selectr-color="rgb(0, 163, 0)" value="bacon">Bacon (Extra long name foo bar baz quz)</option>
+                    <option data-selectr-color="rgb(255, 0, 151)" value="eggs" selected>Eggs</option>
+                    <option data-selectr-color="rgb(159, 0, 167)" value="toast">Toast</option>
+                    <option data-selectr-color="rgb(185, 29, 71)" value="oatmeal">Oatmeal</option>
+                    <option data-selectr-color="rgb(227, 162, 26)" value="steak" selected>Steak</option>
+                    <option data-selectr-color="rgb(218, 83, 44)" value="sausage">Sausage</option>
+                    <option data-selectr-color="rgb(45, 137, 239)" value="fruit">Fresh Fruit</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <h4>Single-select</h4>
+                <select name="beverages">
+                    <option data-selectr-color="rgb(96, 60, 186)" value="coffee">Coffee</option>
+                    <option data-selectr-color="rgb(0, 171, 169)" value="milk" selected>Milk</option>
+                    <option value="juice">Juice (no color coding)</option>
+                </select>
+            </div>
+        </div>
+      </div>
+      <div class="title">
+        <h1>Образцы чекбоксов</h1>
+        </div>
+      <div class="checkBoxes">
+        
+            <h2>Styled with jquery</h2>
+            <input type="checkbox" name="" id="chkbox1">
+            <input type="checkbox" name="" id="chkbox2">
+            <input type="checkbox" name="" id="chkbox3">
+
+
+            <h2>Styled with css</h2>
+            <input type="checkbox" name="" class="CSSstyledCheckbox">
+            <input type="checkbox" name="" class="CSSstyledCheckbox">
+            <input type="checkbox" name="" class="CSSstyledCheckbox">
+        </div>
+       </div>
+    </body>
+</html>
