@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js_11-12</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"> 
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+
+	
+<body>
+	<div class="carousel">
+		<div class="carousel-arrow-left"><span>Влево</span></div>
+		<div class="carousel-hider">
+			<ul class="carousel-list">
+				<li class="carousel-element">
+					<img src="img/img1.jpg">
+					<p>Торт без выпечки, на сковороде, быстрый и вкусный!Этот кулинарный рецепт очень понравится тем, что ищет торт попроще – чтобы быстро готовился и не требовал от нас много сил, умений и дополнительных пр...</p>
+				</li>
+				<li class="carousel-element">
+					<img src="img/img2.jpg">
+					<p>Воздушный десерт вознесет Вас на седьмое небо!Вот так я приготовила очень вкусный классический тирамису в домашних условиях.Тирамису - удивительно нежный и вкусный десерт.</p>
+				</li>
+				<li class="carousel-element">
+					<img src="img/img3.jpg">
+					<p>Всем любителям шоколадных бисквитов посвящается!Торт Пьяная вишня – отличное сочетание шоколадного вкуса с вишневым. Торт не оставит вас равнодушными, приготовить просто. </p>
+				</li>
+				<li class="carousel-element">
+					<img src="img/img4.jpg">
+					<p>Знаменитый торт - вкуснейший, очень необычный по виду - пробуйте!Хороший рецептик:вроде бы простые ингредиенты, а получается такая вкуснота! И выглядит тортик так необычно! В общем,идеально!!! </p>
+				</li>
+				<li class="carousel-element">
+					<img src="img/img5.jpg">
+					<p>Знаменитый пражский торт любим всеми- так много шоколада и сгущенки!Пражский торт, как один из наиболее любимых в народе, существует в нескольких вариациях.</p>
+				</li>
+				<li class="carousel-element">
+					<img src="img/img6.jpg">
+					<p>Безумно вкусный тортик обязательно удивит гостей и семью!Простой рецепт - торт Летний с суфле.</p>
+				</li>
+				<li class="carousel-element">
+					<img src="img/img7.jpg">
+					<p>Чудесный десерт! Вкусный, нежный, просто тает во рту!Вкусно.Очень вкусный, нежный и сочный пляцок.</p>
+				</li>
+	        </ul>    
+		</div>
+		<div class="carousel-arrow-right"><span>Вправо</span></div>
+	</div>
+	<div class="templateTest">
+		<script type="text/tamplate" id="templateTest">
+			<% for (var i=0; i<data.length;i++) {%>
+				<h6><%= data[i].title %></h1>
+				<p><%= data[i].contentOne %></p>
+				<p><%= data[i].contentTwo %></p> 
+				<p><%= data[i].contentThree %></p>  
+			<% } %>
+		</script>
+	</div>
+</body>
+</html>		
