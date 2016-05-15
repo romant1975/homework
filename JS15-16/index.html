@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-	<title>JS15-16</title>
-	<link rel="stylesheet" type="text/css" href="style/main.css">
-	 <script src="js/jquery-1.12.2.js"></script>
-     <script src="js/script.js"></script>
+<meta charset="UTF-8">
+	<title>search</title>
+	<link rel="stylesheet" href="style/main.css">
+	<script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
-   <div class="wrapper">
-		<form class="google" action="#">
-			<div class="google_logo"><img src="img/images.jpg" alt="Logo"></div>
-			<input type="text" id="settings">
-			<input class="google_button" type="submit" value="Поиск Google">
-		</form>
-		<div class="google_result"></div>
-	</div>
+
+<div class="search-box">
+        <div class="google_search__logo"><img src="img/images.jpg" alt="Logo"></div>
+		<input type="text" id="searchtext" >
+		<input type="submit" id="search-btn">
+</div>
+
+<div id="results"></div>
+
 </body>
 </html>
 
