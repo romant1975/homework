@@ -1,0 +1,498 @@
+@import "_slider.scss";
+
+$color-panels-bg: #2a2d32;
+$color-text: #248cec; 
+$color-textactive: #f4b60d; 
+$main-font: Arial, San-Serif;
+$sprites-path: url('../img/sprites.png');
+
+@mixin block($bg){
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	font-family: $main-font;
+	background-color: $bg;
+}	
+@mixin sprites($url, $x, $y){
+	background: $url $x $y no-repeat;
+}
+
+/****MAIN****/
+/*Zagolovki*/
+h2 {
+	font-size: 26px; 
+}
+
+h3 {
+	font-size: 20px; 
+ }
+
+h4 {
+	font-size: 18px;
+ }
+
+
+.conteiner{
+	width: 1160px;
+	margin: 0 auto;
+	position:relative;
+}
+
+/*Header*/
+.box  {
+	margin-top: 42px;
+	@include block(#fff); 
+	&__logo {
+		float:left;
+		display: block;
+		width: 960px;
+		margin-bottom: 34px;
+	}
+	&__socialnetwork li {
+		list-style:none;
+		display: inline-block;
+		text-align:right;
+		padding-left: 15px;
+	}
+	&__socialnetwork a {
+		text-align:right;
+		display: block;
+		height: 18px;
+		width: 18px;
+		
+	}
+	&__socialnetwork {
+		width: 200px;
+		float:left;
+		display: block;
+		text-align: right;
+		/*Sprites*/
+		&__fb {
+			background-position: 0 -17px;
+			@include sprites ($sprites-path, 0px, -17px);
+			&:hover{
+				background-position: 0px 0px;
+			}
+		}
+		&__tw {
+			background-position: -15px -17px;
+			@include sprites($sprites-path, -15px, -17px);
+			&:hover{
+				background-position: -15px 0px;
+			}
+		}
+		&__arg {
+			background-position: -33px -17px;
+			@include sprites($sprites-path, -33px, -17px);
+			&:hover{
+				background-position: -33px 0px;
+			}
+		}
+		&__in {
+			background-position: -50px -17px;
+			@include sprites($sprites-path, -50px, -17px);
+			&:hover{
+				background-position: -50px 0;
+			}
+		}
+		&__sk {
+			background-position: -67px -17px;
+			@include sprites($sprites-path, -67px, -17px);
+			&:hover{
+				background-position: -67px 0px;
+			}
+		}
+	}
+}
+
+
+	
+/*Menu*/
+nav {
+	clear:both;
+	width: 1158px;
+	height: 57px;
+	background: $color-panels-bg;
+	font-family: $main_font;
+	font-size: 12px;
+	li {
+		float: left;
+		list-style:none;
+		display: inline-block;
+		width: 115px;
+		text-align: center;
+		line-height: 57px;
+		border-right: 1px solid black;
+		&:first-child {
+			background: $color-text;
+		}
+		a{
+		text-decoration: none;
+		color: white;
+			&:hover {
+				color: $color-textactive;
+			}
+		}
+	}
+}
+
+/*Form Search*/
+#form_teg {
+	float: right;
+	padding-right: 5px;
+	display: inline;
+	line-height: 57px;
+	font-family: $main_font;
+ }
+ 
+#search {
+	width: 240px;
+	height: 35px;
+	background: #35383c;
+	border: 1px solid black;
+	padding-left: 10px;
+	color: #ffffff; 
+	position: relative;
+}
+
+#button__search {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 85px;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background: url("../img/search.png") 50% no-repeat;
+  outline: 0;
+ }
+
+
+/*Slider*/
+#slider{
+	margin-top:38px;
+}
+
+/*Numbers panel*/
+.advantages {
+	width:1160px;
+	font-family: $main_font;
+	&__number{
+		float: left;
+		font-family: Arial;
+		font-size: 82px;
+		color: #e9e9ea;
+		margin-right: 20px;
+		margin-top: 55px;
+	}
+	&__block {
+		float: left;
+		width: 200px;
+		overflow:hidden;
+		margin-top: 65px;
+		margin-right: 105px;
+		&:last-child{
+			margin-right:0;
+		}
+			&__picture{
+				text-align:left;
+				display: block;
+				height: 32px;
+				width: 32px;
+				
+			}
+			.pic-1 {
+						@include sprites ($sprites-path, 0px, -36px);
+					}
+					.pic-2 {
+						@include sprites ($sprites-path, -32px, -36px);
+					}
+					.pic-3 {
+						@include sprites ($sprites-path, -66px, -36px);
+					}
+				h3{
+					display: inline-block;
+					margin-top: 10px; 
+					font-weight: bold;
+				}
+				p{
+					color: #8a8a8a;
+					font-size: 15px;
+					overflow: hidden;
+					margin-top: 13px;
+					height: 62px;
+				}
+				a{
+					float: left;
+					display: inline;
+					width: 200px;
+					color: #000;
+					background: url('../img/sprites-arrow.png') 0 0 no-repeat;
+					margin-top: 15px;
+					text-decoration: none;
+					margin-bottom: 90px;
+					&:hover{
+						color: $color-text;
+						background: url('../img/sprites-arrow.png') 0 -18px no-repeat;
+					}
+				}
+	}
+}
+	
+/*Services*/
+
+.services{
+	background: $color-panels-bg;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin-top: 81px;
+	font-family: $main_font;
+	h2 {
+		margin-bottom: 49px;
+		padding-top: 37px;
+		color: white;
+	}
+	&__link {
+		float: left;
+		display: inline;
+		margin-right: 30px;
+		text-decoration:none;
+		color: white;
+		&:hover {
+			color: $color-textactive; 
+		}
+		figure {
+			cursor: pointer;
+			position: relative;
+			&:before {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 260px;
+				line-height: 260px;
+				background-color: $color-text;
+				content: "+";
+				text-align: center;
+				font-size: 80px;
+				opacity: 0;
+				-moz-transition: all 1s;
+				-webkit-transition: all 1s;
+				-o-transition: all 1s;
+				transition: all 0.5s; 
+			}	
+			&:hover:before {
+				opacity: 0.8;
+				color: #ffffff; 
+			}
+			figcaption {
+				padding-top: 21px;
+				padding-bottom: 68px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+/*news*/
+
+.news {
+	clear:both;
+	width: 100%;
+	background: #f7f7f7;
+	padding-top: 52px;
+	padding-bottom: 57px;
+	position:relative;
+	overflow:hidden;
+	font-family: $main_font;
+	h2 {
+		margin-bottom: 40px; 
+	}
+	&__info {
+		float: left;
+		background: #f7f7f7;
+		display:inline;
+		width: 600px;
+		div {
+			position:relative;
+		}
+		&__main-img {
+			clear:both;
+			position: relative;
+			float: left;
+			margin-bottom: 30px;
+		}
+		&__text {
+			float: left;
+			overflow: hidden;
+			width: 410px;
+			margin-left: 35px;
+		}
+		&__sub-img1{
+			position:absolute;
+			top:16px;
+			left:-18px;
+			z-index:2;
+		}
+		&__sub-img2{
+			position:absolute;
+			top:197px;
+			left:-18px;
+			z-index:2;
+		}
+		&__text a {
+			text-decoration:none;
+			color: #000;
+			&:hover{
+				color: $color-text;
+			}
+		}
+		&__text p {
+			margin-top: 15px;
+			margin-bottom: 20px;
+		}
+		&__text h4 {
+			font-weight: 600;
+		}
+		.blue-letters{
+			color: $color-text;
+		}
+		
+	}
+	&__accordion {
+		float: left;
+		display: inline;
+		margin-left: 16px;
+		width: 45%; 
+		background: #f7f7f7;
+		h4 {
+			background: #ffffff;
+			padding: 0px 10px;
+			margin: 0;
+			display: block;
+			cursor: pointer;
+			border: 1px solid #e8e8e8;
+			margin-top: 5px; 
+			&:before {
+				content: "+";
+				padding: 4px 8px;
+				margin-right: 10px;
+				display: inline-block;
+				width: 17px;
+				border-right: 1px solid #e8e8e8; 
+			}
+			&.active {
+				background: $color-textactive;
+				background-position: right 5px;
+				color: #ffffff; 
+				&:before {
+					background: $color-textactive;
+					content: "-";
+					color: #ffffff; 
+				}
+			}
+		}
+		p {
+			margin: 0;
+			padding: 21px 40px 35px;
+		}	
+	}
+}
+
+/*Brends*/
+.brends{
+	clear:both;
+	background: white;
+	margin-top: 86px;
+	margin-bottom: 90px;
+	position:relative;
+	overflow:hidden;
+	img{
+		float: left;
+		padding-right: 43px;
+	}
+}
+
+/*footer*/
+
+.footer {
+	background: $color-panels-bg;
+	width: 100%;
+	padding-top:5px;
+	color:white;
+	font-family: $main_font;
+	h4 {
+			margin-top: 55px;
+			margin-bottom: 30px; 
+		}
+	section {
+		float: left;
+		display: inline;
+		margin-right: 90px;
+		&:last-child {
+			margin-right: none;
+		}
+		
+		.footer__top li{
+			border-bottom: 1px solid #5d6063;
+			line-height:30px;
+			width: 200px;
+			color: #5d6063;
+			font-size: 13px;
+				&:last-child{
+					border-bottom:none;
+					margin-bottom: 100px;
+				}
+				&:hover {
+					color: $color-text; 
+				}
+		}
+	}
+	&__bottom {
+		clear: both;
+		overflow:hidden;
+		background: #35383c;
+		line-height: 60px;
+		color: #525558;
+		font-size: 12px;
+		&__item {
+			display: inline;
+			float: left;
+			color: #5d6063;
+			padding-right: 30px;
+			&__img {
+				float: left;
+				display: inline;
+				width: 18px;
+				height: 20px;
+				margin-top: 20px;
+				margin-right: 5px;
+				
+			}
+			.icon-1 {
+					height: 22px;
+					@include sprites ($sprites-path, -7px, -68px);
+					
+				}
+				.icon-2 {
+					height: 22px;
+					@include sprites ($sprites-path, -31px, -68px);
+					
+				}
+				.icon-3 {
+					height:22px;
+					@include sprites ($sprites-path, -55px, -68px);
+					
+				}
+			p{
+				width: 300px;
+			}
+		}
+			
+		.right-position {
+			float: right;
+			margin-right: 0;
+		}
+		
+	}
+}
